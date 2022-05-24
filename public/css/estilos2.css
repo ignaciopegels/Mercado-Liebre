@@ -2,22 +2,22 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}   
+}
 
     body {
         background-color:  #EAC926;
-    }   
+    }
 
     .logo {
         width: 40vw;
         display: flex;
         padding: 1.5rem;
     }
-    
+
     .buscador {
         padding: 0.5em;
         margin-left: 0.5em;
-        width: 70%;
+        width: 45%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -53,19 +53,19 @@
     .fa-magnifying-glass{
         font-size: 1.5rem;
     }
-    
+
     .compraEnCuota {
         display: flex;
         margin: 0;
         justify-content: center;
     }
-    
+
     .icono{
         display:flex;
         flex-direction: row;
         align-items: center;
     }
-    
+
     ul{
         list-style-type: none;
         display: none;
@@ -80,17 +80,18 @@
     }
 
     .subTituloUltima{
+        width: 100vw;
         font-size: 24px;
         margin : 15px;
 
     }
 
-    
+
 
     div.burger-menu{
         text-align: center;
         margin: 20px;
-        
+
     }
     div.burger-menu i{
         text-align: center;
@@ -99,8 +100,7 @@
         color: #FFF;
         font-size: 40px;
         height: 40px;
-        /* margin: 10px 0px 20px 0px; */
-        padding: 10px;
+        margin: 10px 0px 20px 0px;
         width: 40px;
     }
 
@@ -125,21 +125,21 @@
 
     footer{
         display: flex;
+        flex-direction: column;
         width: 100vw;
         background-color: white;
-        flex-direction: column;
         text-align: center;
         border: #ebebeb 3px solid;
     }
 
     div.iconoFooter i{
+        box-sizing: border-box;
+        display: flex;
         text-align: center;
-        align-self: cew;
-        border-radius: 5px;
+        align-self: column;
         color: #1259c3;
         font-size: 40px;
         height: 40px;
-        padding: 10px;
         width: 40px;
     }
 
@@ -163,9 +163,11 @@
     }
 /* footer */
     .info1{
+        width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
         margin: 10px;
     }
 
@@ -184,7 +186,7 @@
     width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     margin: 10px;
 }
 
@@ -198,7 +200,7 @@
 
 .ultimaVisita img {
     width: 100%;
-} 
+}
 
 .ofertasProductos img{
     width: 100%;
@@ -217,7 +219,7 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    border: 1px solid #666;
+    border: 1px solid #ebebeb;
     align-items: flex-start;
 
 }
@@ -232,15 +234,63 @@ section.ultimaVisita{
     background-color: #ebebeb;
 }
 
+.logoBuscador{
+    display: flex;
+    flex-direction: row;
+}
 
-    @media (min-width:769px){
+.logo{
+    width: 50%;
+}
+
+.buscadorLupa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%
+}
+
+.buscador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    height: 70%;
+}
+
+div.buscador input{
+    width: 100%;
+    height: 50%;
+}
+
+.lupa{
+    height: 1.6em;
+    position: relative;
+
+}
+
+div.lupa i {
+    font-size: 1.45em ;
+} 
+
+.iconocompraEnCuota{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+    @media (min-width:760px){
         .banner{
             display:flex;
             flex-direction: row;
         }
 
         .imgBanner{
-            flex-grow: 1;   
+            flex-grow: 1;
         }
         .descripcion{
             display: flex;
@@ -265,10 +315,10 @@ section.ultimaVisita{
             border-radius: 50%;
             border: 1px solid #39b54a;
             padding: 5px;
-            font-size: 16px;  
+            font-size: 16px;
             background-color: #FFF;
             }
-            
+
     .descripcionTotalProducto{
         display: flex;
         align-items: flex-start;
@@ -285,7 +335,7 @@ section.ultimaVisita{
 
     .precioDes{
         width: 100%;
-        display: flex;   
+        display: flex;
     }
 
     .precio{
@@ -313,7 +363,7 @@ section.ultimaVisita{
     }
 
     .ultimaVisitaProducto{
-        width: 23%;
+        width: 46%;
     }
 
     .barra{
@@ -334,19 +384,34 @@ section.ultimaVisita{
 
     li{
         padding: 10px;
+
     }
 
-    .logoBuscadorCuotas{
+    .logo{
+        width: 100%;
+    }
+
+
+    .logoBuscador{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        width: 60%;
+        flex-wrap: wrap;
+    }
+
+    .logo{
+        width: 40%;
+    }
+    
+    .buscadorLupa{
+        width: 50%
     }
 
     .iconocompraEnCuota{
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 55vw;
+        width: 30vw;
     }
 
     div.iconocompraEnCuota h3{
@@ -357,9 +422,6 @@ section.ultimaVisita{
         font-size: 1.5vw;
     }
 
-    
-
-
     div.buscador input{
         height: 40%;
     }
@@ -369,11 +431,29 @@ section.ultimaVisita{
     }
 
     div.lupa i {
-        font-size: 1.9em;
-    } 
+        font-size: 1.8em;
+    }
 
     .buscador{
         box-sizing: border-box;
         display: flex;
         align-items: center;
     }
+
+    .logoBuscadorCuotas{
+        display: flex;
+        flex-wrap: wrap;    
+        flex-direction: row;
+        width: 100%;
+    }
+
+    @media (min-width:1200px){
+        .ultimaVisitaProducto{
+            width: 23%;
+        }
+
+        ::placeholder{
+            font-size: 24px;
+            justify-content: center;
+        }
+
