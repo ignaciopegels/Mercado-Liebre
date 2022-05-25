@@ -1,11 +1,17 @@
-*{
-    margin: 0px;
-    padding: 0px;
+html{
     box-sizing: border-box;
+    margin: 0%;
+}
+
+*, *::after {
+    box-sizing: inherit;
 }
 
     body {
         background-color:  #EAC926;
+        overflow-x:hidden;
+        margin: 0;
+        padding: 0;
     }
 
     .logo {
@@ -175,7 +181,7 @@
         margin: 10px;
     }
 
-        main{
+        main {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -431,7 +437,7 @@ div.lupa i {
     }
 
     div.lupa i {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     .buscador{
@@ -448,12 +454,36 @@ div.lupa i {
     }
 
     @media (min-width:1200px){
+
         .ultimaVisitaProducto{
             width: 23%;
         }
+
 
         ::placeholder{
             font-size: 24px;
             justify-content: center;
         }
 
+
+
+        main{
+            display: flex;
+        }
+
+        section{
+            display: flex;
+            width: 100%;
+        }
+
+        .ultimaVisita{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+
+        }
+    }
