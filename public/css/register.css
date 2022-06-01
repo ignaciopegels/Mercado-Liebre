@@ -11,14 +11,11 @@ html{
     display: none;
 }
 
-
-
-@media (min-width:760px){
     .registro{
         display: flex;
         flex-direction: column;
     }
-}
+
 
 .datosPersonales{
     display: flex;
@@ -55,4 +52,60 @@ input{
     flex-direction: row;
     align-items: center;
     width: 15%;
+}
+
+.categoriasButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categoriasButton ul{
+    flex-direction: column;
+    width: 100%;
+}
+
+.electro input {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    width: 20px;
+}
+
+label{
+    display: flex;
+    justify-content: start;
+    width: 10%;
+}
+
+.electro{
+    display: flex;
+    flex-direction: row ;
+    width: 100%;
+    justify-content: center;
+}
+
+.buttonFormulario{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonFormulario button{
+    background-color: 1259c3;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    width: 50%;
+    padding: 20px;
+}
+.categoriaIntereses2{
+    display: none;} 
+
+@media (max-width:780px){
+    .categoriaIntereses{
+        display: none;
+    }   
+
+    .categoriaIntereses2{
+        display:block
 }
