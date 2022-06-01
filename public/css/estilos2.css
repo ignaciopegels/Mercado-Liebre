@@ -77,11 +77,12 @@ html{
         display: none;
     }
 
-    li{
-        padding: 0.1rem;
+    .roboto{
+            font-family: 'Roboto', sans-serif;
     }
 
     p{
+        font-family: 'Roboto', sans-serif;
         font-size: 12px;
     }
 
@@ -278,7 +279,7 @@ div.buscador input{
 
 div.lupa i {
     font-size: 1.45em ;
-} 
+}
 
 .iconocompraEnCuota{
     display: flex;
@@ -408,7 +409,7 @@ div.lupa i {
     .logo{
         width: 40%;
     }
-    
+
     .buscadorLupa{
         width: 50%
     }
@@ -448,7 +449,7 @@ div.lupa i {
 
     .logoBuscadorCuotas{
         display: flex;
-        flex-wrap: wrap;    
+        flex-wrap: wrap;
         flex-direction: row;
         width: 100%;
     }
