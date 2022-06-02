@@ -454,6 +454,8 @@ div.lupa i {
         width: 100%;
     }
 
+    
+
     @media (min-width:1200px){
 
         .descripcion{
@@ -515,6 +517,4 @@ div.lupa i {
 
         .descripcionTotalProducto:hover .descripcion{
             display: block;
-        }
-        
     }
