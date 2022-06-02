@@ -312,7 +312,7 @@ div.lupa i {
         display: none;
     }
 
-    .ultimaVisitaProducto{
+    .ultimaVisitaProducto:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);}
 
     .fa-truck {
@@ -456,6 +456,15 @@ div.lupa i {
 
     @media (min-width:1200px){
 
+        .descripcion{
+            display: none;
+        }
+
+        .descripcion:hover{
+            display: block;
+            background-color: red;
+        }
+
         .ultimaVisitaProducto{
             width: 23%;
         }
@@ -485,6 +494,14 @@ div.lupa i {
             padding: 0;
             box-sizing: border-box;
             width: 100%;
-
         }
-    }
+
+        .fa-truck:hover{
+            -webkit-transform: rotate(-90deg);
+        }
+
+        .todaLaInfo{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }

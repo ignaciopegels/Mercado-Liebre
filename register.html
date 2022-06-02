@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./public/css/estilos2.css" rel="stylesheet" />
-    <link href="./public/css/register.css" rel="stylesheet"/>
+    <link href="./public/css/register.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/061148ecae.js" crossorigin="anonymous"></script>
 </head>
@@ -67,10 +67,12 @@
         <form action="/registro" method="Post">
             <ul class="registro">
                 <li class="datosPersonales">
-                    <input type="text" minlength="6" maxlength="35" name="nombre" placeholder="Nombre y apellido" pattern="[a-z A-Z]+">
+                    <input type="text" minlength="6" maxlength="35" name="nombre" placeholder="Nombre y apellido"
+                        pattern="[a-z A-Z]+">
                 </li>
                 <li class="datosPersonales">
-                    <input type="text" minlength="6" maxlength="35" name="usuario" placeholder="Nombre de usuari@" required="" >
+                    <input type="text" minlength="6" maxlength="35" name="usuario" placeholder="Nombre de usuari@"
+                        required="">
                 </li>
                 <li class="datosPersonales">
                     <input type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento">
@@ -81,10 +83,10 @@
                 <li class="radio1">
                     <h3>¿Te gustaria Vender o Comprar?</h3>
                     <div class="comprarOVender">
-                    <label>Comprar</label>
-                    <input type="radio" name="compradorVendedor" value="Comprar" checked>
-                    <label>Vender</label>
-                    <input type="radio" name="compradorVendedor" value="Vender">
+                        <label>Comprar</label>
+                        <input type="radio" name="compradorVendedor" value="Comprar" checked>
+                        <label>Vender</label>
+                        <input type="radio" name="compradorVendedor" value="Vender">
                     </div>
                 </li>
                 <div class="categoriasButton">
@@ -94,7 +96,7 @@
                         <li class="electro">
                             <input type="radio" name="categoria" value="Electro">
                             <label>Electro</label>
-                            </li>
+                        </li>
                         <li class="electro">
                             <input type="radio" name="categoria" value="Electro">
                             <label>Moda</label>
@@ -111,48 +113,53 @@
                             <input type="radio" name="categoria" value="Electro">
                             <label>Vida sana</label>
                         </li>
-                    </div>
+                </div>
 
                 <li class="datosPersonales"><input type="file" name="foto" placeholder="Buscar">
                 </li>
-                <li class="datosPersonales"><input type="password" minlength="6" maxlength="35" name="contraseña" placeholder="Contraseña">
+                <li class="datosPersonales"><input type="password" minlength="6" maxlength="35" name="contraseña"
+                        placeholder="Contraseña">
                 </li>
-                <li class="datosPersonales"><input type="password" minlength="6" maxlength="35"name="contraseña" placeholder=" Confirmar Contraseña">
+                <li class="datosPersonales"><input type="password" minlength="6" maxlength="35" name="contraseña"
+                        placeholder=" Confirmar Contraseña">
                 </li>
                 <li class="buttonFormulario"><button type="submit">ENVIAR</button></li>
                 <li class="buttonFormulario"><button type="reset">RESET</button></li>
             </ul>
         </form>
-        </main>
+    </main>
     <footer>
-        <div class="info1">
-            <div class="iconoFooter">
-                <i class="fa-solid fa-credit-card"></i>
+        <footer>
+            <div class="todaLaInfo">
+            <div class="info1 roboto">
+                <div class="iconoFooter">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <p class="subtituloFooter">Pagá con tarjeta o en efectivo</p>
+                <p class="infoFooter">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
             </div>
-            <p class="subtituloFooter">Pagá con tarjeta o en efectivo</p>
-            <p class="infoFooter">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                puntos de pago. ¡Y siempre es seguro!</p>
-        </div>
-        <div class="info1">
-            <div class="iconoFooter">
-                <i class="fa-solid fa-gift"></i>
+            <div class="info1">
+                <div class="iconoFooter">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
+                <p class="subtituloFooter "> Envío gratis desde $ 2.500</p>
+                <p class="infoFooter">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.
+                </p>
             </div>
-            <p class="subtituloFooter"> Envío gratis desde $ 2.500</p>
-            <p class="infoFooter">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                productos. Es un beneficio de Mercado Puntos.
-            </p>
-        </div>
-        <div class="info1">
-            <div class="iconoFooter">
-                <i class="fa-solid fa-user-shield"></i>
+            <div class="info1">
+                <div class="iconoFooter">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <p class="subtituloFooter">Seguridad, de principio a fin</p>
+                <p class="infoFooter">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.
+                </p>
             </div>
-            <p class="subtituloFooter">Seguridad, de principio a fin</p>
-            <p class="infoFooter">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                porque estás siempre protegid@.
-            </p>
         </div>
-        <small class="copyright">Copyright ©&nbsp;1999-2022 MercadoLiebre S.R.L.</small>
-    </footer>
+            <small class="copyright">Copyright ©&nbsp;1999-2022 MercadoLiebre S.R.L.</small>
+        </footer>
 </body>
 
 </html>
