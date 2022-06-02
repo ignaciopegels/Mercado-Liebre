@@ -485,6 +485,13 @@ div.lupa i {
             padding: 0;
             box-sizing: border-box;
             width: 100%;
-
         }
+        .descripcion{
+            display: none;
+        }
+
+        .descripcionTotalProducto:hover .descripcion{
+            display: block;
+        }
+        
     }
