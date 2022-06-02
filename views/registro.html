@@ -5,13 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<<<<<<< HEAD:register.html
-    <link href="./public/css/estilos2.css" rel="stylesheet" />
-    <link href="./public/css/register.css" rel="stylesheet" />
-=======
     <link href="css/estilos2.css" rel="stylesheet" />
     <link href="css/register.css" rel="stylesheet"/>
->>>>>>> 63a02d75bea8ad3d1c73f1965ae3d22554437adf:views/registro.html
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/061148ecae.js" crossorigin="anonymous"></script>
 </head>
@@ -88,9 +83,9 @@
                 <li class="radio1">
                     <h3>¿Te gustaria Vender o Comprar?</h3>
                     <div class="comprarOVender">
-                        <label>Comprar</label>
-                        <input type="radio" name="compradorVendedor" value="Comprar" checked>
-                        <label>Vender</label>
+                        <label class="comprarLabel">Comprar</label>
+                        <input  type="radio" name="compradorVendedor" value="Comprar" checked>
+                        <label class="venderLabel">Vender</label>
                         <input type="radio" name="compradorVendedor" value="Vender">
                     </div>
                 </li>
@@ -120,27 +115,24 @@
                         </li>
                 </div>
 
-                <li class="datosPersonales"><input type="file" name="foto" placeholder="Buscar">
-                </li>
+                <li class="datosPersonales">
+                    <div class="fotoUsuario">
+                    <label>Foto de usuario</label>
+                    <input type="file" name="foto" placeholder="Buscar">
+                </li></div>
                 <li class="datosPersonales"><input type="password" minlength="6" maxlength="35" name="contraseña"
                         placeholder="Contraseña">
                 </li>
                 <li class="datosPersonales"><input type="password" minlength="6" maxlength="35" name="contraseña"
                         placeholder=" Confirmar Contraseña">
                 </li>
-                <li class="buttonFormulario"><button type="submit">ENVIAR</button></li>
+                <li class="buttonFormulario"><button class="botonEnviar" type="submit">ENVIAR</button></li>
                 <li class="buttonFormulario"><button type="reset">RESET</button></li>
             </ul>
         </form>
-<<<<<<< HEAD:register.html
     </main>
-    <footer>
         <footer>
             <div class="todaLaInfo">
-=======
-        </main>
-        <footer>
->>>>>>> 63a02d75bea8ad3d1c73f1965ae3d22554437adf:views/registro.html
             <div class="info1 roboto">
                 <div class="iconoFooter">
                     <i class="fa-solid fa-credit-card"></i>
@@ -167,10 +159,7 @@
                     porque estás siempre protegid@.
                 </p>
             </div>
-<<<<<<< HEAD:register.html
         </div>
-=======
->>>>>>> 63a02d75bea8ad3d1c73f1965ae3d22554437adf:views/registro.html
             <small class="copyright">Copyright ©&nbsp;1999-2022 MercadoLiebre S.R.L.</small>
         </footer>
 </body>

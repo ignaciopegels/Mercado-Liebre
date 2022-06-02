@@ -462,7 +462,6 @@ div.lupa i {
 
         .descripcion:hover{
             display: block;
-            background-color: red;
         }
 
         .ultimaVisitaProducto{
@@ -495,7 +494,11 @@ div.lupa i {
             box-sizing: border-box;
             width: 100%;
         }
-<<<<<<< HEAD
+
+        .fa-truck{
+            transition-property: -webkit-transform;
+            transition-duration: 1s;
+        }
 
         .fa-truck:hover{
             -webkit-transform: rotate(-90deg);
@@ -506,7 +509,6 @@ div.lupa i {
             flex-direction: row;
             justify-content: space-evenly;
         }
-=======
         .descripcion{
             display: none;
         }
@@ -516,4 +518,3 @@ div.lupa i {
         }
         
     }
->>>>>>> 63a02d75bea8ad3d1c73f1965ae3d22554437adf
