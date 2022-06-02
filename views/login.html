@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="./public/css/estilos2.css" rel="stylesheet" />
-    <link href="./public/css/register.css" rel="stylesheet" />
+    <link href="css/estilos2.css" rel="stylesheet" />
+    <link href="css/register.css" rel="stylesheet"/>
+    <link href="css/Login.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/061148ecae.js" crossorigin="anonymous"></script>
 </head>
@@ -16,7 +17,7 @@
         <div class="logoBuscadorCuotas">
             <div class="logoBuscador">
                 <div class="logo">
-                    <img src="./public/image/logo-mercado-liebre.svg">
+                    <img src="/image/logo-mercado-liebre.svg">
                 </div>
                 <div class="buscadorLupa">
                     <div class="buscador">
@@ -29,21 +30,21 @@
             </div>
             <div class="iconocompraEnCuota">
                 <i class="fa-solid fa-hand-holding-dollar"></i>
-                <h3>Compra en cuotas y sin tarjeta de credito</h3>
+                <h3 class="roboto">Compra en cuotas y sin tarjeta de credito</h3>
             </div>
         </div>
         <nav class="barra">
-            <ul class="lista1">
+            <ul class="lista1 roboto">
                 <li>Ofertas</li>
                 <li>Tiendas Oficiales</li>
                 <li>Vender</li>
                 <li>Ayuda</li>
                 <br>
             </ul>
-            <ul class="lista2">
+            <ul class="lista2 roboto">
                 <div class="icono">
                     <i class="fa-solid fa-right-to-bracket"></i>
-                    <li>Creá tu cuenta</li>
+                    <a href="/registro"><li>Creá tu cuenta</li></a> 
                 </div>
                 <div class="icono">
                     <i class="fa-solid fa-id-card"></i>
@@ -59,7 +60,7 @@
             <i class="fas fa-bars"></i>
         </div>
         <div class="banner">
-            <img class="imgBanner" src="./public/image/img-home-banner.jpg">
+            <img class="imgBanner" src="/image/img-home-banner.jpg">
         </div>
     </header>
     <main>
@@ -67,70 +68,15 @@
         <form action="/registro" method="Post">
             <ul class="registro">
                 <li class="datosPersonales">
-                    <input type="text" minlength="6" maxlength="35" name="nombre" placeholder="Nombre y apellido"
-                        pattern="[a-z A-Z]+">
+                    <input type="text" minlength="6" maxlength="35" name="usuario" placeholder="Nombre de usuari@" required="" >
                 </li>
-                <li class="datosPersonales">
-                    <input type="text" minlength="6" maxlength="35" name="usuario" placeholder="Nombre de usuari@"
-                        required="">
-                </li>
-                <li class="datosPersonales">
-                    <input type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento">
-                </li>
-                <li class="datosPersonales">
-                    <input type="text" minlength="6" maxlength="35" name="" placeholder="Domicilio">
-                </li>
-                <li class="radio1">
-                    <h3>¿Te gustaria Vender o Comprar?</h3>
-                    <div class="comprarOVender">
-                        <label>Comprar</label>
-                        <input type="radio" name="compradorVendedor" value="Comprar" checked>
-                        <label>Vender</label>
-                        <input type="radio" name="compradorVendedor" value="Vender">
-                    </div>
-                </li>
-                <div class="categoriasButton">
-                    <h3 class="categoriaIntereses"> Categorías de interés (puede elegir más de una)</h3>
-                    <h3 class="categoriaIntereses2"> Interéses</h3>
-                    <ul class="listaRadio">
-                        <li class="electro">
-                            <input type="radio" name="categoria" value="Electro">
-                            <label>Electro</label>
-                        </li>
-                        <li class="electro">
-                            <input type="radio" name="categoria" value="Electro">
-                            <label>Moda</label>
-                        </li>
-                        <li class="electro">
-                            <input type="radio" name="categoria" value="Electro">
-                            <label>Hogar</label>
-                        </li>
-                        <li class="electro">
-                            <input type="radio" name="categoria" value="Electro">
-                            <label>Juguetería</label>
-                        </li>
-                        <li class="electro">
-                            <input type="radio" name="categoria" value="Electro">
-                            <label>Vida sana</label>
-                        </li>
-                </div>
-
-                <li class="datosPersonales"><input type="file" name="foto" placeholder="Buscar">
-                </li>
-                <li class="datosPersonales"><input type="password" minlength="6" maxlength="35" name="contraseña"
-                        placeholder="Contraseña">
-                </li>
-                <li class="datosPersonales"><input type="password" minlength="6" maxlength="35" name="contraseña"
-                        placeholder=" Confirmar Contraseña">
+                <li class="datosPersonales"><input type="password" minlength="6" maxlength="35"name="contraseña" placeholder=" Confirmar Contraseña">
                 </li>
                 <li class="buttonFormulario"><button type="submit">ENVIAR</button></li>
-                <li class="buttonFormulario"><button type="reset">RESET</button></li>
             </ul>
         </form>
-    </main>
-    <footer>
+        </main>
         <footer>
-            <div class="todaLaInfo">
             <div class="info1 roboto">
                 <div class="iconoFooter">
                     <i class="fa-solid fa-credit-card"></i>
@@ -157,7 +103,6 @@
                     porque estás siempre protegid@.
                 </p>
             </div>
-        </div>
             <small class="copyright">Copyright ©&nbsp;1999-2022 MercadoLiebre S.R.L.</small>
         </footer>
 </body>

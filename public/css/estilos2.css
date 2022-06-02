@@ -495,6 +495,7 @@ div.lupa i {
             box-sizing: border-box;
             width: 100%;
         }
+<<<<<<< HEAD
 
         .fa-truck:hover{
             -webkit-transform: rotate(-90deg);
@@ -505,3 +506,14 @@ div.lupa i {
             flex-direction: row;
             justify-content: space-evenly;
         }
+=======
+        .descripcion{
+            display: none;
+        }
+
+        .descripcionTotalProducto:hover .descripcion{
+            display: block;
+        }
+        
+    }
+>>>>>>> 63a02d75bea8ad3d1c73f1965ae3d22554437adf
